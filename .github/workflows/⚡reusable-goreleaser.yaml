@@ -17,7 +17,7 @@ jobs:
       - nscloud-cache-tag-nix-store-cache-ubuntu-26.04-amd64
     timeout-minutes: 45
     steps:
-      - uses: AtomiCloud/actions.setup-nix@v3
+      - uses: AtomiCloud/actions.setup-nix@v4
       - uses: AtomiCloud/actions.cache-bun@v2
       - name: Validate the Nix CLI package
         run: nix build .#releaser
